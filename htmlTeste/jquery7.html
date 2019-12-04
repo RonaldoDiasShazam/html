@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#flip").click(function(){
+		
+		$("#panel").slideDown("slow");
+		
+	});
+});
+</script>
+
+<style>
+#panel, #flip{
+	padding: 10px;
+	text-align: center;
+	backgroud-color: #93bdac;
+	border: solid 3px #99f159;
+}
+
+#panel {
+	padding: 50px;
+	display: none;
+}
+</style>
+
+</head>
+<body>
+
+<p>Demonstrate fadeToogle() with different speed parameters.</p>
+<button>Click to fade in/out boxes</button><br><br>
+
+<div id="flip">Click para escurregar para Baixo</div>
+<br><br><br>
+<div id="panel">Hello FUCKING World!</div>
+
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!Doctype HTML>
+ <html lang="pt-br">
+	
+	<head>
+	 <meta charset="UTF-8">
+	 <link real="stylesheet"type="test/css" hrel="etilo.css">
+	 <title>Layout da Pagina Usando Include</title>
+	</head>
+
+	<body>
+	
+	
+<form action="cata.php" method="post">
+  <h1>Enquete</h1>
+  nome: <input type="text" name="nome">
+  Sobrenome:<input type="text"name="sobrenome"><br>
+  gmail:<input type="text" name="gmail"><br>
+  Senha:<input type="password" name="senha"><br>
+  
+  <input type="radio" name="sexo" value="Masculino">Masculino<br>
+  <input type="radio" name="sexo" value="Feminino">Feminino<br>
+  <input type="radio" name="sexo" value="Outro">Outro<br>
+  
+  <h3>Qual destes você tem em sua casa mais?</h3>
+  <input type="checkbox" name="console" value="PS4">Eu tenho PS4<br>
+  <input type="checkbox" name="console" value="X-Box one">Eu tenho X-Box one<br>
+  <input type="checkbox" name="PC" value="PC Gamer">Eu tenho Pc Gamer<br>
+  <input type="checkbox" name="Nada" value="Nenhuma das Alternativas">Eu tenho Nenhuma das Alternativas<br>
+  
+  <h3>Qual destes Jogos você Gosta mais? E Porque?</h3>
+  <select name="Jogo">
+  <option value="CS-GO">CS-GO</option>
+  <option value="PES">PES </option>
+  <option value="FIFA">FIFA </option>
+  <option value="Cod">Cod </option>
+  <option value="BF-1">BF-1 </option>
+  <option value="GTA V">GTA V</option>
+  <option value="Pokémon Go">Pokémon Go </option>
+  </select><br>
+  
+  <textarea name="mansagem" rols="70" cols="30">
+  Escreva Aqui!!!
+  </textarea> <br>
+
+  <input type="reset" name="limpar" value="Limpar"><br>
+  <input type="submit" name="Enviar" value="Enviar"><br>
+  
+</form>
+
+
+  
+  
+		<header>
+	 <?php enclude "heade.html";?>
+		</header>
+	
+	<nav>
+	 <?php include'nav.html';?>
+	 </nav>
+	
+	<section>
+	 <h1>London</h1>
+	 <p>(*-*)</p>
+	 <p>d--(°o°)--b</p>
+	 </section>
+	
+	<footer>
+	 <?php include 'footec.html';?>
+	 </footer>
+	
+	</body>
+	 </html>
